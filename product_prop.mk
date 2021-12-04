@@ -126,6 +126,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=disable
 
+# SOC
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.soc.manufacturer=Samsung \
+    ro.soc.model=Exynos 9810
+
 # Samsung specific
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
