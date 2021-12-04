@@ -131,6 +131,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.soc.manufacturer=Samsung \
     ro.soc.model=Exynos 9810
 
+# Disable SMD sensor
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.sensors.smd=false
+
 # Samsung specific
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
