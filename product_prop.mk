@@ -69,6 +69,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.security.keystore.keytype=sak,gak \
     ro.frp.pst=/dev/block/persistent \
     sys.config.activelaunch_enable=true \
+    sys.usb.ffs.aio_compat=true \
     ro.config.dha_cached_min=6 \
     ro.config.dha_cached_max=19 \
     ro.cfg.dha_cached_max=24 \
