@@ -43,7 +43,6 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 # Extracted with libbootimg
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_BASE := 0x10000000
