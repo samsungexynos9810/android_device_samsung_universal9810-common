@@ -136,7 +136,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 include device/custom/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
