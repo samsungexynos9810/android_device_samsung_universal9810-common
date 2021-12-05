@@ -132,10 +132,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.zram \
