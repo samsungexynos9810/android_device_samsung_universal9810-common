@@ -356,11 +356,9 @@
         <transport>hwbinder</transport>
         <version>1.2</version>
         <interface>
-                <name>IDevice</name>
-                <instance>armnn</instance>
+            <name>IDevice</name>
+            <instance>armnn</instance>
         </interface>
-        <fqname>@1.0::IDevice/armnn</fqname>
-        <fqname>@1.2::IDevice/armnn</fqname>
     </hal>
 </manifest>
 
