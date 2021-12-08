@@ -128,6 +128,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
+# priv-app permissions
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=disable
+
 # Samsung specific
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
