@@ -205,6 +205,11 @@ on init
     chown system radio /sys/class/sensors/thermistor_sensor/threshold_up
     chown system radio /sys/class/sensors/thermistor_sensor/threshold_sub
 
+# Permissions for LCD HMT
+	chown system system /sys/class/lcd/panel/hmt_on
+	chown system system /sys/class/lcd/panel/hmt_bright
+	chown system system /sys/class/mdnie/mdnie/hmt_color_temperature
+
 # DATA_INJECTION
     chown system radio /sys/class/sensors/ssp_sensor/data_injection_enable
 
@@ -485,6 +490,7 @@ on post-fs-data
     chown system system /dev/freezer/frozen
     chown system system /dev/freezer/frozen/tasks
     chown system system /dev/freezer/frozen/cgroup.procs
+    chown system system /dev/freezer/frozen/freezer.state
     chown system system /dev/freezer/thaw
     chown system system /dev/freezer/thaw/tasks
     chown system system /dev/freezer/thaw/cgroup.procs
@@ -492,6 +498,7 @@ on post-fs-data
 # MARs for freecess
     chmod 0644 /dev/freezer/frozen/tasks
     chmod 0644 /dev/freezer/frozen/cgroup.procs
+    chmod 0644 /dev/freezer/frozen/freezer.state
     chmod 0644 /dev/freezer/thaw/tasks
     chmod 0644 /dev/freezer/thaw/cgroup.procs
 
@@ -516,7 +523,7 @@ on post-fs-data
     chown clat clat /sys/kernel/clat/xlat_addrs
     chmod 0660 /sys/kernel/clat/xlat_v4_addrs
     chown clat clat /sys/kernel/clat/xlat_v4_addrs
-  
+
 on boot
 # SSWAP
     write /proc/sys/vm/swappiness 160
@@ -883,11 +890,6 @@ on fs
 	chown system system /sys/class/backlight/panel/brightness
 	chown system system /sys/class/backlight/panel/weakness_ccb
 
-# Permissions for LCD HMT
-	chown system system /sys/class/lcd/panel/hmt_on
-	chown system system /sys/class/lcd/panel/hmt_bright
-	chown system system /sys/class/mdnie/mdnie/hmt_color_temperature
-
 # Permissions for LCD ALPM
 	chown system system /sys/class/lcd/panel/alpm
 
@@ -1119,3 +1121,4 @@ service swapon /sbin/sswap -s -f 2048
     group root
     seclabel u:r:sswap:s0
     oneshot
+
