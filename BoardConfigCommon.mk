@@ -83,6 +83,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
+# Compatibility Matrix
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
 # Samsung HALs
 TARGET_POWERHAL_VARIANT := samsung
 

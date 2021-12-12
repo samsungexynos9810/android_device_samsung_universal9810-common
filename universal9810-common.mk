@@ -104,6 +104,8 @@ PRODUCT_COPY_FILES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -299,7 +301,9 @@ PRODUCT_PACKAGES += \
 
 # RCS
 PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_OUT_VENDOR)/etc/wifi/wpa_supplicant_conf.conf \
