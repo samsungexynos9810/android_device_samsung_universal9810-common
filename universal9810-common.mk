@@ -104,8 +104,6 @@ PRODUCT_COPY_FILES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -160,8 +158,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0 \
-    TetheringConfigOverlay
+    netutils-wrapper-1.0
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -289,9 +286,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service.exynos9810
 
-# Wifi
+# Overlays
 PRODUCT_PACKAGES += \
     WifiOverlay \
+    TetheringConfigOverlay \
+    TelephonyOverlay
+
+# Wifi
+PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf \
