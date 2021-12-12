@@ -1044,14 +1044,6 @@ service abox /vendor/bin/main_abox 17c50000.abox /data/vendor/log/abox
     user audioserver
     group system
 
-# ICD
-service prepare_param /system/bin/prepare_param.sh /dev/block/platform/11120000.ufs/by-name/PARAM
-    class core
-    user root
-    group root
-    seclabel u:r:prepare_param:s0
-    oneshot
-
 # Set watchdog timer to 40 seconds and pet it every 10 seconds to get a 30 second margin
 service watchdogd  /system/bin/watchdogd 10 30
     class core
@@ -1101,18 +1093,6 @@ on property:persist.sys.storage_preload=1
 
 on property:persist.sys.storage_preload=0
     start umount_service
-
-# irisd
-    service irisd /system/bin/irisd
-    class late_start
-    user system
-    group system
-
-# faced
-    service faced /system/bin/faced
-    class late_start
-    user system
-    group system
 
 # SSWAP
 service swapon /sbin/sswap -s -f 2048
