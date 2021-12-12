@@ -132,13 +132,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64
 
-# Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2 \
-    android.hardware.neuralnetworks@1.1 \
-    android.hardware.neuralnetworks@1.0 \
-    libtextclassifier_hash
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.zram \
