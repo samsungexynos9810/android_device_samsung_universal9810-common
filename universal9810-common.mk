@@ -92,7 +92,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.2-service \
-    android.hardware.graphics.mapper@2.0-impl
+    android.hardware.graphics.mapper@2.0-impl \
+    libgui_vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -271,10 +272,6 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
-# Stagefright
-PRODUCT_PACKAGES += \
-    libgui_vendor
 
 # TextClassifier
 PRODUCT_PACKAGES += \
