@@ -20,6 +20,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Audio
 PRODUCT_PACKAGES += \
+    audio.a2dp.default \
     android.hardware.audio@2.0-service \
     android.hardware.audio4.0-service \
     android.hardware.audio.service \
