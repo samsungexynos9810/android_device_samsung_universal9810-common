@@ -1,12 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (C) 2021 The LineageOS Project
 
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -309,6 +303,8 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TelephonyOverlay

@@ -82,11 +82,11 @@ BOARD_HAS_DOWNLOAD_MODE := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# Manifest
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-
-# Compatibility Matrix
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+# VINTF
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
 
 # Samsung HALs
 TARGET_POWERHAL_VARIANT := samsung
@@ -131,10 +131,6 @@ BOARD_VNDK_VERSION := current
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcutils-v29.so \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcutils-v29.so
-
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibility_matrix.xml
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
