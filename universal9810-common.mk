@@ -301,7 +301,6 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     WifiOverlay \
-    TetheringConfigOverlay \
     TelephonyOverlay
 
 # Wifi
