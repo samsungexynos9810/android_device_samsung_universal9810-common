@@ -6,6 +6,9 @@ COMMON_PATH := device/samsung/universal9810-common
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+# Hacks
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
