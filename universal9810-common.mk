@@ -126,7 +126,9 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-service.samsung
+    android.hardware.keymaster@3.0 \
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0-impl
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable-v29.so \
