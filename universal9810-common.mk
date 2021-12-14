@@ -291,7 +291,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-service.exynos9810
+    android.hardware.vibrator-service.samsung
 
 # Overlays
 PRODUCT_PACKAGES += \
