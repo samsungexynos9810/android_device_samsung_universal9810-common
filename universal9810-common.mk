@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.0-impl
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.3.vendor
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -86,6 +87,10 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+# GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -313,6 +318,12 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.deprecated@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_OUT_VENDOR)/etc/wifi/wpa_supplicant_conf.conf \
