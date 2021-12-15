@@ -275,16 +275,6 @@
         <fqname>@1.0::IVibrator/default</fqname>
     </hal>
     <hal format="hidl">
-       <name>vendor.samsung.hardware.biometrics.fingerprint</name>
-       <transport>hwbinder</transport>
-       <version>3.0</version>
-       <interface>
-           <name>ISecBiometricsFingerprint</name>
-           <instance>default</instance>
-       </interface>
-       <fqname>@3.0::ISecBiometricsFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
         <transport>hwbinder</transport>
         <impl level="generic"></impl>
