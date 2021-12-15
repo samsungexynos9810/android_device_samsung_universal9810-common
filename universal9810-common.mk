@@ -12,26 +12,17 @@ TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-# Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio4.0-service \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.soundtrigger@2.0-impl \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
+    android.hardware.audio.effect@7.0-impl \
     libtinycompress \
-    libaudioroute \
-    libtinyalsa \
-    libtinycompress
+    audio.r_submix.default \
+    audio.usb.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
