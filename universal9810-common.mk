@@ -1,9 +1,6 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (C) 2021 The LineageOS Project
 
-# RRO (Runtime Resource Overlay)
-PRODUCT_ENFORCE_RRO_TARGETS += *
-
 # Screen density
 PRODUCT_AAPT_CONFIG := xlarge
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
