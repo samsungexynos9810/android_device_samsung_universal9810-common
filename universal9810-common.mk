@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor:64
@@ -174,7 +175,12 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    netutils-wrapper-1.0
+    netutils-wrapper-1.0 \
+    android.system.net.netd@1.1.vendor
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.2.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
