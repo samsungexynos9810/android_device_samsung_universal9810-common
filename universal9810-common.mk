@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service \
+    audio.bluetooth.default \
     audio.a2dp.default \
     libbt-vendor
 
@@ -171,6 +172,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
+    libnfc-nci \
+    libnfc_nci_jni \
     NfcNci \
     Tag
 
