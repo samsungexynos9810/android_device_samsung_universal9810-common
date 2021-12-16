@@ -12,7 +12,9 @@ TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
+# Audio
 PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0 \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
@@ -152,6 +154,9 @@ PRODUCT_PACKAGES += \
     init.usb_accessory.rc
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
@@ -287,6 +292,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
+    android.hardware.usb.gadget@1.0 \
     android.hardware.usb@1.1-service.typec
 
 # Vibrator
