@@ -14,7 +14,8 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.0 \
+    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.soundtrigger@2.0-service \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
@@ -155,7 +156,8 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0
+    android.hardware.media.c2@1.0 \
+    android.hardware.media.c2@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -293,6 +295,7 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb.gadget@1.0 \
+    android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb@1.1-service.typec
 
 # Vibrator
