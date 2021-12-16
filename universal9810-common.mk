@@ -14,8 +14,6 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.0-impl \
-    android.hardware.soundtrigger@2.0-service \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
@@ -30,6 +28,13 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
+    audio.a2dp.default \
+    libbt-vendor
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -96,12 +101,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/uinput-sec-fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-sec-fp.kl \
-    $(LOCAL_PATH)/configs/keylayout/gpio_keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio_keys.kl \
-    $(LOCAL_PATH)/configs/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sec_touchscreen.kl
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
@@ -110,18 +109,18 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     vndservicemanager
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/uinput-sec-fp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-sec-fp.kl \
+    $(LOCAL_PATH)/configs/keylayout/gpio_keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio_keys.kl \
+    $(LOCAL_PATH)/configs/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sec_touchscreen.kl
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0.vendor \
     libkeymaster3device
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable-v29.so \
-    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_portable-v29.so \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice-v29.so \
-    prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpuresoftkeymasterdevice-v29.so
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -130,14 +129,6 @@ PRODUCT_PACKAGES += \
 # SP-NDK
 PRODUCT_PACKAGES += \
     libvulkan
-
-# Bluetooth
-PRODUCT_PACKAGES += \
-    audio.a2dp.default \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
-    libbt-vendor:64
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -153,10 +144,6 @@ PRODUCT_PACKAGES += \
     init.usb_accessory.rc
 
 # Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0 \
-    android.hardware.media.c2@1.0.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
@@ -234,6 +221,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.picture_in_picture.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.picture_in_picture.xml
 
 # Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.samsung-libperfmgr
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
@@ -242,9 +232,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung/aidl/power-libperfmgr
-
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.0
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -277,7 +264,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0 \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl.samsung \
     android.hardware.sensors@1.0-service
 
 # Soong namespaces
@@ -290,13 +277,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-PRODUCT_PACKAGES += \
-    lineage.fastcharge@1.0-service.9810
-
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb.gadget@1.0 \
-    android.hardware.usb.gadget@1.0.vendor \
     android.hardware.usb@1.1-service.typec
 
 # Vibrator
@@ -307,8 +289,7 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    TelephonyOverlay
+    WifiOverlay
 
 # Wifi
 PRODUCT_PACKAGES += \

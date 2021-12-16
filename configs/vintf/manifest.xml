@@ -27,6 +27,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ISurfaceFlingerConfigs</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.gnss</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -84,24 +93,6 @@
         <interface>
             <name>IDevice</name>
             <instance>armnn</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.power</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.soundtrigger</name>
-        <transport>hwbinder</transport>
-        <version>2.3</version>
-        <interface>
-            <name>ISoundTriggerHw</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -241,12 +232,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!-- Configstore -->
-    <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
-    </hal>
     <!-- Bluetooth Vendor -->
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
@@ -289,23 +274,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.media.c2</name>
+        <name>android.hardware.usb</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
-            <name>IComponentStore</name>
-            <instance>default</instance>
-            <instance>software</instance>
-        </interface>
-        <fqname>@1.0::IComponentStore/default</fqname>
-        <fqname>@1.0::IComponentStore/software</fqname>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.usb.gadget</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUsbGadget</name>
+            <name>IUsb</name>
             <instance>default</instance>
         </interface>
     </hal>
