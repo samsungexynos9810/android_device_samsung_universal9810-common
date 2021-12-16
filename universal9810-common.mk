@@ -14,6 +14,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
