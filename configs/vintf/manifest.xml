@@ -232,6 +232,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Configstore -->
+    <hal format="hidl">
+        <name>android.hardware.configstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
+    </hal>
     <!-- Bluetooth Vendor -->
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
