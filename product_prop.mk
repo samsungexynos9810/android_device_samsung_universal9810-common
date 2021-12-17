@@ -132,3 +132,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
     ro.vendor.cscsupported=1
+
+# Wifi direct
+PRODUCT_PRODUCT_PROPERTIES += \
+    wifi.direct.interface=p2p0
