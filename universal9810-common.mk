@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor \
+    libunwindstack.vendor \
     vndservicemanager
 
 # Keylayout
