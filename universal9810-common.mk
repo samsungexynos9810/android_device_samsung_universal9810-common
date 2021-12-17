@@ -306,12 +306,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wifi_sec.rc \
     hostapd \
-    wificond \
-    wifilogd \
-    wlutil \
-    libwpa_client \
     wpa_supplicant \
-    wpa_supplicant.conf \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service
