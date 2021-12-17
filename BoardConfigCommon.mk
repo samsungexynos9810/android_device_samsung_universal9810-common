@@ -138,4 +138,4 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 # include device/samsung_slsi/sepolicy/sepolicy.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/universal9810-common/BoardConfigVendor.mk
+include vendor/samsung/universal9810-common/BoardConfigVendor.mk
