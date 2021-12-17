@@ -26,10 +26,6 @@ lib/libskeymaster.so
 lib64/libskeymaster.so
 lib64/libkeymaster_helper.so
 
-# NFC
-etc/nfc_key
-etc/nfcee_access.xml
-
 # WiFi
 lib/android.hardware.wifi.hostapd@1.0.so
 lib/vendor.samsung.hardware.wifi.hostapd@2.0.so
