@@ -364,12 +364,9 @@ vendor/etc/permissions/android.hardware.wifi.aware.xml
 vendor/etc/wifi/bcmdhd_sta.bin_b0
 vendor/etc/wifi/bcmdhd_mon.bin_b2
 vendor/etc/wifi/nvram.txt_murata_r032_b0
-vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/etc/wifi/nvram.txt_murata_r041_b2
 vendor/etc/wifi/nvram.txt_r02a_b2
 vendor/etc/wifi/indoorchannel.info
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/nvram.txt_murata_r031_b0
 vendor/etc/wifi/bcmdhd_sta.bin_b2
 vendor/etc/wifi/wldu.conf
