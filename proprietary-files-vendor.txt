@@ -381,7 +381,6 @@ vendor/etc/wifi/nvram.txt_r02j_b0
 vendor/etc/wifi/bcmdhd_mfg.bin_b0
 vendor/etc/init/wifi_brcm.rc
 vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/init/wifi.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/android.hardware.wifi@1.0-service
