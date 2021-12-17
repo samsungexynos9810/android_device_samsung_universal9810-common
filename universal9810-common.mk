@@ -304,7 +304,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    wifi.rc \
+    wifi_sec.rc \
     hostapd \
     wificond \
     wifilogd \
