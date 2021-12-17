@@ -122,7 +122,6 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 # Graphics
 TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-OVERRIDE_RS_DRIVER := libRSDriverArm.so
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
 # VNDK
