@@ -88,7 +88,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.systemaudiodebug=abox&codecdsp \
     ro.gfx.driver.0=com.samsung.gpudriver.S9MaliG72_90 \
     ro.hardware.egl=mali \
-    ro.zygote.disable_gl_preload=true \
+    ro.zygote.disable_gl_preload=true
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES += \
