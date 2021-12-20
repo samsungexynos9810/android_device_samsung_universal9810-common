@@ -125,6 +125,9 @@ TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
+# Security
+BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+
 # VNDK
 BOARD_VNDK_VERSION := current
 
