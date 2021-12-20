@@ -145,13 +145,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libvulkan
 
-# Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2 \
-    android.hardware.neuralnetworks@1.1 \
-    android.hardware.neuralnetworks@1.0 \
-    libtextclassifier_hash
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.zram \
@@ -176,7 +169,11 @@ PRODUCT_PACKAGES += \
 
 # Neural Networks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2.vendor
+    android.hardware.neuralnetworks@1.2 \
+    android.hardware.neuralnetworks@1.1 \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.2.vendor \
+    libtextclassifier_hash
 
 # NFC
 PRODUCT_PACKAGES += \
