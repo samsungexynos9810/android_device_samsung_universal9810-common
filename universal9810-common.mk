@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio4.0-service \
     libtinycompress \
+    audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudioroute \
