@@ -92,7 +92,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_hwc_vds=1
 
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
