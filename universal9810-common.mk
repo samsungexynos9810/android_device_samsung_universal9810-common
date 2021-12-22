@@ -51,6 +51,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0-service \
     audio.bluetooth.default \
     audio.a2dp.default \
+    libldacBT_bco \
     libbt-vendor:64
 
 # Boot animation
