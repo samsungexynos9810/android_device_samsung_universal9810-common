@@ -26,10 +26,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     audio.primary.default \
     audio.r_submix.default \
-    audio.usb.default \
-    libaudioroute \
-    libtinyalsa \
-    SamsungDAP
+    audio.usb.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
