@@ -52,6 +52,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=9,9
 
+# Bluetooth
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.bluetooth.a2dp_offload.supported=false \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    vendor.audio.feature.a2dp_offload.enable=false
+
 # Sound
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.vc_call_vol_steps=7
