@@ -54,10 +54,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    persist.bt.enableAptXHD=false \
-    vendor.audio.feature.a2dp_offload.enable=false
+    persist.bt.enableAptXHD=false
 
 # Sound
 PRODUCT_PRODUCT_PROPERTIES += \
