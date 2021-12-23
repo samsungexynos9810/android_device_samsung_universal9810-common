@@ -46,22 +46,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.usb_by_primary=no \
     ro.config.a2dp_by_primary=no
 
-# Surfaceflinger
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1 \
-    debug.sf.disable_hwc_vds=1
-
-# Telephony
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.telephony.default_network=9,9
-
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.bt.enableAptXHD=false
-
-# Sound
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.vc_call_vol_steps=7
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -78,23 +65,36 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
+# Disable SMD sensor
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.sensors.smd=false
+
 # priv-app permissions
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=disable
+
+# Samsung specific
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.product_ship=true \
+    ro.vendor.cscsupported=1
 
 # SOC
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.soc.manufacturer=Samsung \
     ro.soc.model=Exynos 9810
 
-# Disable SMD sensor
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.sensors.smd=false
-
-# Samsung specific
+# Sound
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.product_ship=true \
-    ro.vendor.cscsupported=1
+    ro.config.vc_call_vol_steps=7
+
+# Surfaceflinger
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_hwc_vds=1
+
+# Telephony
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.telephony.default_network=9,9
 
 # Wifi direct
 PRODUCT_PRODUCT_PROPERTIES += \
