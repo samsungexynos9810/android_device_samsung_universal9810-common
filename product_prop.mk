@@ -93,6 +93,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_hwc_vds=1
 
+# System
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.binary_xml=false
+
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=9,9
