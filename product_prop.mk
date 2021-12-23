@@ -16,8 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.speaker_amp=1 \
     ro.config.bluetooth=external \
     ro.config.fmradio=external \
-    ro.config.usb_by_primary=no \
-    ro.config.a2dp_by_primary=no \
     ro.opengles.version=196610 \
     debug.slsi_platform=1 \
     debug.hwc.winupdate=1 \
@@ -42,6 +40,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.gfx.driver.0=com.samsung.gpudriver.S9MaliG72_90 \
     ro.hardware.egl=mali \
     ro.zygote.disable_gl_preload=true
+
+# Audio
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.usb_by_primary=no \
+    ro.config.a2dp_by_primary=no
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES += \
