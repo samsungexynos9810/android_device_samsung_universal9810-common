@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     libtinycompress \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    audio.bluetooth.default
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -37,6 +38,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth.audio@2.1-impl \
     audio.a2dp.default \
     libbt-vendor:64
 
