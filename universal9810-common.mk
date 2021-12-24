@@ -20,10 +20,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.3-impl \
-    libtinycompress \
     audio.r_submix.default \
     audio.usb.default \
-    audio.bluetooth.default
+    audio.bluetooth.default \
+    libaudioroute \
+    libtinyalsa \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
