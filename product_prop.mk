@@ -48,8 +48,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.samsung_samplerate.supported=true \
-    persist.bt.enableAptXHD=false
+    bluetooth.samsung_samplerate.supported=true
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
