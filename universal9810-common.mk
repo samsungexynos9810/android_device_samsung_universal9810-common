@@ -290,7 +290,7 @@ PRODUCT_PACKAGES += \
 
 # SYSCONFIG
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+    $(LOCAL_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Shims
 PRODUCT_PACKAGES += \
