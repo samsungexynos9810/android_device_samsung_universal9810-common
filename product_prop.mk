@@ -19,7 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     debug.slsi_platform=1 \
     debug.hwc.winupdate=1 \
-    debug.sf.disable_backpressure=1 \
     ro.vendor.ddk.set.afbc=1 \
     ro.hdcp2.rx=tz \
     keyguard.no_require_sim=true \
