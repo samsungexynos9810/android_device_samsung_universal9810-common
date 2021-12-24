@@ -288,6 +288,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.samsung-multihal \
     libsensorndkbridge
 
+# SYSCONFIG
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Shims
 PRODUCT_PACKAGES += \
     libshim_sensorndkbridge
