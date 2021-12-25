@@ -69,6 +69,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.sensors.smd=false
 
+# Pre-rendering
+PRODUCT_PRODUCT_PROPERTIES +=\
+    ro.vendor.perf.scroll_opt=true
+
 # priv-app permissions
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=disable
