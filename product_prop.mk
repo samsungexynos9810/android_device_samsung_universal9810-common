@@ -69,6 +69,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.sensors.smd=false
 
+# IORap
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
 # Pre-rendering
 PRODUCT_PRODUCT_PROPERTIES +=\
     ro.vendor.perf.scroll_opt=true
