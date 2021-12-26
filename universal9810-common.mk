@@ -41,8 +41,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
     libldacBT_dec \
