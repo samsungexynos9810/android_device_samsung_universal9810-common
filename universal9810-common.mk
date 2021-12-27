@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.safailnet.rc \
     fstab.zram \
     init.samsung.rc \
     init.usb_accessory.rc
