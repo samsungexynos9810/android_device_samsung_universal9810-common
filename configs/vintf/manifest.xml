@@ -133,10 +133,6 @@
             <instance>default</instance>
             <instance>software</instance>
         </interface>
-        <fqname>@1.0::IComponentStore/default</fqname>
-        <fqname>@1.0::IComponentStore/software</fqname>
-        <fqname>@1.1::IComponentStore/default</fqname>
-        <fqname>@1.1::IComponentStore/software</fqname>
         <fqname>@1.2::IComponentStore/default</fqname>
         <fqname>@1.2::IComponentStore/software</fqname>
     </hal>
