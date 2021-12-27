@@ -107,12 +107,6 @@
             <Limit name="measured-frame-rate-3840x2160" range="70-140" />
         </MediaCodec>
 
-        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="450-900" />
-            <Limit name="measured-frame-rate-720x480" range="220-440" />
-            <Limit name="measured-frame-rate-1280x720" range="70-140" />
-            <Limit name="measured-frame-rate-1920x1080" range="28-56" />
-        </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
             <Limit name="measured-frame-rate-176x144" range="300-600" />
             <Limit name="measured-frame-rate-352x288" range="100-200" />
