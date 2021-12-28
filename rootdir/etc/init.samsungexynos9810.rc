@@ -300,6 +300,18 @@ on init
     write /dev/stune/top-app/schedtune.gb_duration 25
     write /dev/stune/top-app/schedtune.gb_balance_ratio 55
 
+on late-fs
+    # Start services for Boot Animation
+    start servicemanager
+    start surfaceflinger
+    start bootanim
+    # Make sure HW service manager started and start required HAL services
+    start vendor.configstore-hal
+    start vendor.gralloc-2-0
+
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.${ro.hardware} --late
+
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -857,7 +869,7 @@ on boot
     chown root system /efs/FactoryApp/mag_cal_param
 
 on fs
-    mount_all /vendor/etc/fstab.${ro.hardware}
+    mount_all /vendor/etc/fstab.${ro.hardware} --early
 
     mount none /mnt/vendor/efs /efs bind
     mount none /mnt/vendor/cpefs /cpefs bind
@@ -867,6 +879,9 @@ on fs
     restorecon_recursive /mnt/vendor/efs
     restorecon_recursive /mnt/vendor/cpefs
     restorecon_recursive /mnt/vendor/persist
+
+    # Start HW service manager early
+    start hwservicemanager
 
     chown radio system /mnt/vendor/efs
     chmod 0771 /mnt/vendor/efs
