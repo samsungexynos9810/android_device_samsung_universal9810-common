@@ -14,6 +14,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # APEX
 PRODUCT_COMPRESSED_APEX := false
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true

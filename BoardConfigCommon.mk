@@ -6,6 +6,9 @@ COMMON_PATH := device/samsung/universal9810-common
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+# Apex
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Hacks
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
