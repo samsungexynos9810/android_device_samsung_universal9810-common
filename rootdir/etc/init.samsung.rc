@@ -45,6 +45,9 @@ on property:sys.boot_completed=1
     write /sys/block/sda/queue/read_ahead_kb 256
     write /sys/block/sda/queue/nr_requests 128
 
+    # Disable sw watchdog
+    write /dev/watchdog1 "V"
+
 service argos-daemon /system/bin/true
     oneshot
     disabled
