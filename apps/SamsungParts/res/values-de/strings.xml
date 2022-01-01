@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Spiel 1 Profil</string>
     <string name="dolby_profile_game_2">Spiel 2 Profil</string>
     <string name="dolby_profile_special_audio">Spezial Sound Profil</string>
-    <!-- Eureka Kernel features category -->
-    <string name="eureka_kernel_features">Eureka Kernel Eigenschaften</string>
+    <!-- Outsiders Kernel features category -->
+    <string name="outsiders_kernel_features">Outsiders Kernel Eigenschaften</string>
 
     <!-- FlashLight -->
     <string name="flashlight_title">Taschenlampe Helligkeit</string>

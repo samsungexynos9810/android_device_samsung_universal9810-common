@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/flashlight_title">
 
-    <com.eurekateam.samsungextras.preferences.CustomSeekBarPreference
+    <com.outsiders.samsungextras.preferences.CustomSeekBarPreference
         android:key="flashlight_pref"
         android:title="@string/flashlight_title"
         android:icon="@drawable/ic_led"

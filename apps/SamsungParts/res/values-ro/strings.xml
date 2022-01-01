@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Profil joc 1</string>
     <string name="dolby_profile_game_2">Profil joc 2</string>
     <string name="dolby_profile_special_audio">Profil Audio Special</string>
-    <!-- Eureka Kernel features category -->
-    <string name="eureka_kernel_features">Eureka Kernel Features</string>
+    <!-- Outsiders Kernel features category -->
+    <string name="outsiders_kernel_features">Outsiders Kernel Features</string>
 
     <!-- FlashLight -->
     <string name="flashlight_title">Luminozitate lanterna</string>

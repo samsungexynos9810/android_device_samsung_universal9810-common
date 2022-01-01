@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Profile Game 1</string>
     <string name="dolby_profile_game_2">Profile Game 2</string>
     <string name="dolby_profile_special_audio">Profile Spesial</string>
-    <!-- Eureka Kernel features category -->
-    <string name="eureka_kernel_features">Fitur Eureka Kernel</string>
+    <!-- Outsiders Kernel features category -->
+    <string name="outsiders_kernel_features">Fitur Outsiders Kernel</string>
 
     <!-- FlashLight -->
     <string name="flashlight_title">Kecerahan Senter</string>

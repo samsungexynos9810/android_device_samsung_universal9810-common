@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Game 1 Profile</string>
     <string name="dolby_profile_game_2">Game 2 Profile</string>
     <string name="dolby_profile_special_audio">Special Audio Profile</string>
-    <!-- Categoría de características de Eureka Kernel -->
-    <string name="eureka_kernel_features">Características de Eureka Kernel</string>
+    <!-- Categoría de características de Outsiders Kernel -->
+    <string name="outsiders_kernel_features">Características de Outsiders Kernel</string>
 
     <!-- Linterna -->
     <string name="flashlight_title">Brillo de la linterna</string>

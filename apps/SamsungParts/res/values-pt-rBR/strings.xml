@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Perfil de Jogos 1</string>
     <string name="dolby_profile_game_2">Perfil de Jogos 2</string>
     <string name="dolby_profile_special_audio">Perfil automático especial</string>
-    <!-- Eureka Kernel features category -->
-    <string name="eureka_kernel_features">Recursos do Eureka Kernel</string>
+    <!-- Outsiders Kernel features category -->
+    <string name="outsiders_kernel_features">Recursos do Outsiders Kernel</string>
 
     <!-- FlashLight -->
     <string name="flashlight_title">Brilho da lanterna</string>

@@ -20,8 +20,8 @@
             android:icon="@drawable/ic_sound" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.eurekateam.samsungextras.speaker.ClearSpeakerActivity"
-                android:targetPackage="com.eurekateam.samsungextras" />
+                android:targetClass="com.outsiders.samsungextras.speaker.ClearSpeakerActivity"
+                android:targetPackage="com.outsiders.samsungextras" />
         </Preference>
         <Preference
             android:key="dolby_settings"
@@ -30,13 +30,13 @@
             android:icon="@drawable/ic_speaker_cleaner_icon" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.eurekateam.samsungextras.dolby.DolbyActivity"
-                android:targetPackage="com.eurekateam.samsungextras" />
+                android:targetClass="com.outsiders.samsungextras.dolby.DolbyActivity"
+                android:targetPackage="com.outsiders.samsungextras" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory
-        android:key="eureka_kernel_features"
-        android:title="@string/eureka_kernel_features">
+        android:key="outsiders_kernel_features"
+        android:title="@string/outsiders_kernel_features">
         <Preference
             android:key="flashlight_settings"
             android:title="@string/flashlight_title"
@@ -44,8 +44,8 @@
             android:icon="@drawable/ic_led" >
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="com.eurekateam.samsungextras.flashlight.FlashLightActivity"
-                android:targetPackage="com.eurekateam.samsungextras" />
+                android:targetClass="com.outsiders.samsungextras.flashlight.FlashLightActivity"
+                android:targetPackage="com.outsiders.samsungextras" />
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory
@@ -69,8 +69,8 @@
             android:persistent="true">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.eurekateam.samsungextras.battery.BatteryActivity"
-            android:targetPackage="com.eurekateam.samsungextras" />
+            android:targetClass="com.outsiders.samsungextras.battery.BatteryActivity"
+            android:targetPackage="com.outsiders.samsungextras" />
         </Preference>
 
     </PreferenceCategory>

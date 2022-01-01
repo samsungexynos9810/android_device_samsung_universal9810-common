@@ -47,8 +47,8 @@
     <string name="dolby_profile_game_1">Игровой профиль 1</string>
     <string name="dolby_profile_game_2">Игровой профиль 2</string>
     <string name="dolby_profile_special_audio">Свой профиль звука</string>
-    <!-- Eureka Kernel features category -->
-    <string name="eureka_kernel_features">Функции Eureka Kernel</string>
+    <!-- Outsiders Kernel features category -->
+    <string name="outsiders_kernel_features">Функции Outsiders Kernel</string>
 
     <!-- FlashLight -->
     <string name="flashlight_title">Яркость фонарика</string>
