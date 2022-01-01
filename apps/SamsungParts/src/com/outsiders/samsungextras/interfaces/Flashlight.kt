@@ -1,4 +1,4 @@
-package com.eurekateam.samsungextras.interfaces
+package com.outsiders.samsungextras.interfaces
 
 object Flashlight {
     external fun setFlash(value: Int)

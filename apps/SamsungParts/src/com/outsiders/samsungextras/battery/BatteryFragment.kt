@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.eurekateam.samsungextras.battery
+package com.outsiders.samsungextras.battery
 
 import android.os.Bundle
 import android.widget.Toast
@@ -21,8 +21,8 @@ import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
-import com.eurekateam.samsungextras.R
-import com.eurekateam.samsungextras.interfaces.Battery
+import com.outsiders.samsungextras.R
+import com.outsiders.samsungextras.interfaces.Battery
 
 class BatteryFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {
     private var mFastChargePref: SwitchPreference? = null

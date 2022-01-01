@@ -1,4 +1,4 @@
-package com.eurekateam.samsungextras.dolby
+package com.outsiders.samsungextras.dolby
 
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService

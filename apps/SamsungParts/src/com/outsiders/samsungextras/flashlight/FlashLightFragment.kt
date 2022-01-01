@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.eurekateam.samsungextras.flashlight
+package com.outsiders.samsungextras.flashlight
 
 import android.os.Bundle
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import com.eurekateam.samsungextras.GlobalConstants
-import com.eurekateam.samsungextras.R
-import com.eurekateam.samsungextras.interfaces.Flashlight
-import com.eurekateam.samsungextras.preferences.CustomSeekBarPreference
-import com.eurekateam.samsungextras.utils.SystemProperties
+import com.outsiders.samsungextras.GlobalConstants
+import com.outsiders.samsungextras.R
+import com.outsiders.samsungextras.interfaces.Flashlight
+import com.outsiders.samsungextras.preferences.CustomSeekBarPreference
+import com.outsiders.samsungextras.utils.SystemProperties
 import java.io.File
 
 class FlashLightFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {

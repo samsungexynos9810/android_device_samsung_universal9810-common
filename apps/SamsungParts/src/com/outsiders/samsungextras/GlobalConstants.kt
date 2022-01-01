@@ -1,4 +1,4 @@
-package com.eurekateam.samsungextras
+package com.outsiders.samsungextras
 
 object GlobalConstants {
     /**

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License
  */
-package com.eurekateam.samsungextras
+package com.outsiders.samsungextras
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,12 +22,12 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
 import androidx.preference.SwitchPreference
-import com.eurekateam.samsungextras.battery.BatteryActivity
-import com.eurekateam.samsungextras.flashlight.FlashLightActivity
-import com.eurekateam.samsungextras.fps.FPSInfoService
-import com.eurekateam.samsungextras.interfaces.GPU.GPU
-import com.eurekateam.samsungextras.interfaces.SELinux.SELinux
-import com.eurekateam.samsungextras.speaker.ClearSpeakerActivity
+import com.outsiders.samsungextras.battery.BatteryActivity
+import com.outsiders.samsungextras.flashlight.FlashLightActivity
+import com.outsiders.samsungextras.fps.FPSInfoService
+import com.outsiders.samsungextras.interfaces.GPU.GPU
+import com.outsiders.samsungextras.interfaces.SELinux.SELinux
+import com.outsiders.samsungextras.speaker.ClearSpeakerActivity
 
 class DeviceSettings : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {

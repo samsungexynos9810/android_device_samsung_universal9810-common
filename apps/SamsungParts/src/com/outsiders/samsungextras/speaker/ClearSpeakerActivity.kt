@@ -13,23 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.eurekateam.samsungextras.flashlight
+package com.outsiders.samsungextras.speaker
 
 import android.R.id.content
+import android.R.id.home
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.fragment.app.FragmentActivity
-import com.android.internal.R.id.home
 
-class FlashLightActivity : FragmentActivity() {
+class ClearSpeakerActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val fragment = this.supportFragmentManager.findFragmentById(content)
-        val flashLightFragment: FlashLightFragment
+        val clearSpeakerFragment: ClearSpeakerFragment
         if (fragment == null) {
-            flashLightFragment = FlashLightFragment()
+            clearSpeakerFragment = ClearSpeakerFragment()
             this.supportFragmentManager.beginTransaction()
-                .add(content, flashLightFragment)
+                .add(content, clearSpeakerFragment)
                 .commit()
         }
     }
