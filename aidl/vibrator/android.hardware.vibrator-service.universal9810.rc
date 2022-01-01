@@ -1,4 +1,4 @@
-service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service.samsung
+service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service.universal9810
     class hal
     user system
     group system
