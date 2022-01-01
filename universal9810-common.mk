@@ -83,6 +83,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor
 
+# Extra Command-Line Tools
+PRODUCT_PACKAGES += \
+    sgdisk \
+    strace
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samsung
