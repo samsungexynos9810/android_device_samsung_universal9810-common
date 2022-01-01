@@ -1,0 +1,10 @@
+hidl_interface { 
+    name: "vendor.outsiders.hardware.flashlight@1.0",
+    root: "vendor.outsiders",  
+    srcs: [
+       "types.hal",
+       "IFlashlight.hal",
+    ],
+    interfaces: [ "android.hidl.base@1.0" ],
+    gen_java: true,
+}

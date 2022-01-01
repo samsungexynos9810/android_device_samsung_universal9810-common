@@ -1,0 +1,19 @@
+// FIXME: your file license if you have one
+
+cc_binary {
+    name: "vendor.outsiders.hardware.battery@1.0-service",
+    relative_install_path: "hw",
+    proprietary: true,
+    srcs: [
+        "Battery.cpp",
+	"service.cpp",
+    ],
+    shared_libs: [
+        "libhidlbase",
+        "libutils",
+        "liblog",
+        "vendor.outsiders.hardware.battery@1.0",
+    ],
+    init_rc: [ "vendor.outsiders.hardware.battery@1.0-service.rc" ],
+    vintf_fragments: [ "vendor.outsiders.hardware.battery@1.0.xml" ],
+}
