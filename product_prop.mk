@@ -43,16 +43,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.usb_by_primary=no
+    ro.config.usb_by_primary=no \
+    ro.config.a2dp_by_primary=no
 
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.a2dp_by_primary=no \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
-    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
     bluetooth.samsung_samplerate.supported=true
 
 # Charger
