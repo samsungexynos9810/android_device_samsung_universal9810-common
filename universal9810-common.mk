@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     audio.r_submix.default \
     audio.usb.default \
-    android.hardware.audio.service
+    android.hardware.audio.service \
+    SamsungDAP
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
