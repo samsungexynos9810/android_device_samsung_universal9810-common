@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
+    android.hardware.light-service.universal9810
 
 # SP-NDK
 PRODUCT_PACKAGES += \
@@ -331,7 +331,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung
+    android.hardware.vibrator-service.universal9810
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
