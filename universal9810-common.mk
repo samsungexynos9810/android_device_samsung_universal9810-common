@@ -190,7 +190,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.universal9810 \
+    android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
