@@ -1,7 +1,7 @@
-package com.eurekateam.samsungextras.utils
+package com.outsiders.samsungextras.utils
 
 import android.util.Log
-import com.eurekateam.samsungextras.GlobalConstants
+import com.outsiders.samsungextras.GlobalConstants
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
