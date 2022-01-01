@@ -83,13 +83,11 @@ PRODUCT_COPY_FILES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0 \
-    android.hardware.drm@1.1 \
-    libfwdlockengine \
-    libdrmclearkeyplugin \
+    android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor
 
 # Fingerprint
