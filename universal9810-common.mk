@@ -29,11 +29,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     audio.r_submix.default \
     audio.usb.default \
-    audio.bluetooth.default \
-    android.hardware.audio.service \
-    libaudioroute \
-    libtinyalsa \
-    libtinycompress
+    android.hardware.audio.service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -47,13 +43,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth@1.1-service \
+    android.hardware.bluetooth.audio@2.1-impl \
     audio.a2dp.default \
-    libldacBT_dec \
-    libldacBT_bco \
-    libbt-vendor:64
+    audio.bluetooth.default
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
