@@ -304,7 +304,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.samsung-multihal \
+    android.hardware.sensors@2.1-service.universal9810-multihal \
     libsensorndkbridge
 
 # SYSCONFIG
