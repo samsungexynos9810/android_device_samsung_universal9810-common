@@ -368,4 +368,7 @@
 
     <!-- Enable system navigation keys. -->
     <bool name="config_supportSystemNavigationKeys">true</bool>
+
+    <!-- Override audio panel location to the left side -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
 </resources>
