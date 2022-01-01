@@ -263,7 +263,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.samsung-libperfmgr
+    android.hardware.power-service.universal9810-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -272,7 +272,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/samsung/aidl/power-libperfmgr
+    $(LOCAL_PATH)/aidl/power-libperfmgr
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
