@@ -113,12 +113,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=9,9
 
-# Vulkan
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.hwui.use_vulkan=true \
-    graphics.gpu.profiler.support=true \
-    debug.hwui.renderer=skiavk
-
 # Wifi direct
 PRODUCT_PRODUCT_PROPERTIES += \
     wifi.direct.interface=p2p0

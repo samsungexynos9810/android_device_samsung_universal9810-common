@@ -125,7 +125,6 @@ BOARD_HAVE_SAMSUNG_WIFI          := true
 
 # Graphics
 TARGET_USES_HWC2 := true
-TARGET_USES_VULKAN := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
