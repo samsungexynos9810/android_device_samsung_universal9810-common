@@ -35,7 +35,7 @@
     <!-- Dolby -->
     <string name="dolby_title">Dolby Atmos</string>
     <string name="dolby_summary">Enable the Dolby Atmos audio effect</string>
-    <string name="dolby_description">Enable Dolby audio, just like in OneUI.</string>
+    <string name="dolby_description">Dolby Atmos is a surround sound technology developed by Dolby Laboratories. It expands on existing surround sound systems by adding height channels, which allows sounds to be interpreted as three-dimensional objects.</string>
     <string name="dolby_modes_title">Available Dolby Modes</string>
     <string name="dolby_modes_summary">Choose one of these</string>
     <string name="dolby_profile_auto">Auto Profile</string>
