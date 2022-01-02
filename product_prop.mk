@@ -48,8 +48,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Bluetooth
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.a2dp_by_primary=no \
-    ro.bluetooth.a2dp_offload.supported=false \
-    persist.bluetooth.a2dp_offload.disabled=true \
+    ro.bluetooth.a2dp_offload.supported=true \
+    persist.bluetooth.a2dp_offload.disabled=false \
     persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
