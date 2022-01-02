@@ -50,14 +50,4 @@
         </Preference>
 
     </PreferenceCategory>
-    <PreferenceCategory
-        android:key="info"
-        android:title="@string/info_category">
-        <Preference
-            android:key="selinux_settings"
-            android:title="@string/selinux_title"
-            android:icon="@drawable/ic_qs_log"
-            android:summary="@string/selinux_summary"
-            android:persistent="true"/>
-    </PreferenceCategory>
 </PreferenceScreen>
