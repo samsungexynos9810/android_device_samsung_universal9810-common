@@ -13,9 +13,6 @@ cc_library_shared {
         "liblog",
         "libutils",
         "vendor.outsiders.hardware.battery@1.0",
-        "vendor.outsiders.hardware.flashlight@1.0",
-        "vendor.outsiders.hardware.gpu@1.0",
-        "vendor.outsiders.security.selinux@1.0",
     ]
 }
 

@@ -23,10 +23,7 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.PreferenceManager
 import androidx.preference.SwitchPreference
 import com.outsiders.samsungextras.battery.BatteryActivity
-import com.outsiders.samsungextras.flashlight.FlashLightActivity
 import com.outsiders.samsungextras.fps.FPSInfoService
-import com.outsiders.samsungextras.interfaces.GPU.GPU
-import com.outsiders.samsungextras.interfaces.SELinux.SELinux
 import com.outsiders.samsungextras.speaker.ClearSpeakerActivity
 
 class DeviceSettings : PreferenceFragmentCompat(), Preference.OnPreferenceChangeListener {
@@ -45,26 +42,6 @@ class DeviceSettings : PreferenceFragmentCompat(), Preference.OnPreferenceChange
         val mFpsInfo = findPreference<SwitchPreference>(PREF_KEY_FPS_INFO)!!
         mFpsInfo.isChecked = prefs.getBoolean(PREF_KEY_FPS_INFO, false)
         mFpsInfo.onPreferenceChangeListener = this
-        val mGPUExynos = findPreference<SwitchPreference>(PREF_GPUEXYNOS)!!
-        mGPUExynos.isChecked = GPU == 1
-        mGPUExynos.onPreferenceChangeListener = this
-        val mSELinux = findPreference<Preference>(PREF_SELINUX)!!
-        mSELinux.onPreferenceClickListener =
-            Preference.OnPreferenceClickListener {
-                Toast.makeText(
-                    context,
-                    if (SELinux == 1) "SELinux is in enforcing state." else "SELinux is in permissive state.",
-                    Toast.LENGTH_SHORT
-                ).show()
-                true
-            }
-        val mFlashLight = findPreference<Preference>(PREF_FLASHLIGHT)!!
-        mFlashLight.onPreferenceClickListener =
-            Preference.OnPreferenceClickListener {
-                val intent = Intent(requireActivity().applicationContext, FlashLightActivity::class.java)
-                startActivity(intent)
-                true
-            }
         val mFastCharge = findPreference<Preference>(PREF_BATTERY)!!
         mFastCharge.onPreferenceClickListener =
             Preference.OnPreferenceClickListener {
@@ -85,15 +62,6 @@ class DeviceSettings : PreferenceFragmentCompat(), Preference.OnPreferenceChange
                     this.requireContext().stopService(fpsinfo)
                 }
             }
-            PREF_GPUEXYNOS -> {
-                val gpu_enabled = value as Boolean
-                GPU = if (gpu_enabled) 1 else 0
-                Toast.makeText(
-                    context,
-                    if (gpu_enabled) "GPU Throttling is now enabled." else "GPU Throttling is now disabled.",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
             else -> {
             }
         }
@@ -103,9 +71,6 @@ class DeviceSettings : PreferenceFragmentCompat(), Preference.OnPreferenceChange
     companion object {
         const val PREF_KEY_FPS_INFO = "fps_info"
         private const val PREF_CLEAR_SPEAKER = "clear_speaker_settings"
-        private const val PREF_FLASHLIGHT = "flashlight_settings"
-        const val PREF_GPUEXYNOS = "gpuexynos_settings"
-        private const val PREF_SELINUX = "selinux_settings"
         const val PREF_BATTERY = "battery_settings"
     }
 }

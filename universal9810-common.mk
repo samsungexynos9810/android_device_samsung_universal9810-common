@@ -354,10 +354,7 @@ PRODUCT_PACKAGES += \
 # SamsungParts
 PRODUCT_PACKAGES += \
     SamsungParts \
-    vendor.outsiders.hardware.battery@1.0-service \
-    vendor.outsiders.hardware.flashlight@1.0-service \
-    vendor.outsiders.hardware.gpu@1.0-service \
-    vendor.outsiders.security.selinux@1.0-service
+    vendor.outsiders.hardware.battery@1.0-service
 
 # RCS
 PRODUCT_PACKAGES += \

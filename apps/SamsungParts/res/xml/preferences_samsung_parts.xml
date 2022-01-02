@@ -35,30 +35,6 @@
         </Preference>
     </PreferenceCategory>
     <PreferenceCategory
-        android:key="outsiders_kernel_features"
-        android:title="@string/outsiders_kernel_features">
-        <Preference
-            android:key="flashlight_settings"
-            android:title="@string/flashlight_title"
-            android:summary="@string/flashlight_summary"
-            android:icon="@drawable/ic_led" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.outsiders.samsungextras.flashlight.FlashLightActivity"
-                android:targetPackage="com.outsiders.samsungextras" />
-        </Preference>
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="misc"
-        android:title="@string/misc_category">
-        <SwitchPreference
-            android:key="gpuexynos_settings"
-            android:title="@string/gpuexynos_title"
-            android:icon="@drawable/ic_gpu"
-            android:summary="@string/gpuexynos_summary"
-            android:persistent="true"/>
-    </PreferenceCategory>
-    <PreferenceCategory
         android:key="fastcharge"
         android:title="@string/fastcharge_category">
         <Preference

@@ -54,15 +54,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.outsiders.samsungextras.flashlight.FlashLightActivity"
-            android:exported="true"
-            android:label="@string/flashlight_title">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.outsiders.samsungextras.dolby.DolbyActivity"
             android:exported="true"
             android:label="@string/dolby_title">
