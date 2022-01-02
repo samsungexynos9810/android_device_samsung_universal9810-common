@@ -48,6 +48,5 @@
             android:targetClass="com.outsiders.samsungextras.battery.BatteryActivity"
             android:targetPackage="com.outsiders.samsungextras" />
         </Preference>
-
     </PreferenceCategory>
 </PreferenceScreen>
