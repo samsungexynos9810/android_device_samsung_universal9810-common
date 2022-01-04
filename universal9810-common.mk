@@ -46,8 +46,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service \
     android.hardware.bluetooth.audio@2.1-impl \
     audio.a2dp.default \
-    audio.bluetooth.default \
-    libldacBT_bco
+    audio.bluetooth.default
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
