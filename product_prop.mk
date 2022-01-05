@@ -78,6 +78,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
+# One handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
+
 # Pre-rendering
 PRODUCT_PRODUCT_PROPERTIES +=\
     ro.vendor.perf.scroll_opt=true
