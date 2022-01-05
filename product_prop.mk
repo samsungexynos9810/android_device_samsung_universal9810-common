@@ -86,6 +86,10 @@ PRODUCT_PRODUCT_PROPERTIES +=\
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=disable
 
+# RIL
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fflag.override.settings_provider_model=false
+
 # Samsung specific
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
