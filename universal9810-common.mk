@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     libldacBT_bco \
-    libldacBT_dec \
+    libldacBT_dec
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
