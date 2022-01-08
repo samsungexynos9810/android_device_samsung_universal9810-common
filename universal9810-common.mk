@@ -78,6 +78,15 @@ PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.configstore@1.1-service 
 
+# Dolby
+PRODUCT_PACKAGES += \
+    libprofileparamstorage \
+    libsecaudiocoreutils \
+    libswdap
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
 # Display Device Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
