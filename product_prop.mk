@@ -103,6 +103,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.product_ship=true \
     ro.vendor.cscsupported=1
 
+# Skia
+PRODUCT_PROPERTY_OVERRIDES += \
+    renderthread.skia.reduceopstasksplitting=true
+
 # SOC
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.soc.manufacturer=Samsung \
