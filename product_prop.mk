@@ -55,6 +55,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
     bluetooth.samsung_samplerate.supported=true
 
+# Blur
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
