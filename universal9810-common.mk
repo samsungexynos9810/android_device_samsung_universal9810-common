@@ -364,9 +364,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
 # SamsungParts
+ifeq ($(TARGET_USE_SAMSUNG_PARTS),true)
 PRODUCT_PACKAGES += \
     SamsungParts \
     vendor.outsiders.hardware.battery@1.0-service
+endif
 
 # RCS
 PRODUCT_PACKAGES += \

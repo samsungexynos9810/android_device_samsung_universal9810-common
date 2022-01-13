@@ -94,6 +94,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifes
 # Samsung HALs
 TARGET_POWERHAL_VARIANT := samsung
 
+# Samsung Parts
+TARGET_USE_SAMSUNG_PARTS := true
+
 # Soong
 BUILD_BROKEN_DUP_RULES := true
 
