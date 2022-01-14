@@ -274,17 +274,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.universal9810-libperfmgr \
+    android.hardware.power@1.0-service.exynos \
     android.hardware.power.stats@1.0-service.mock
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel \
-    $(LOCAL_PATH)/aidl/power-libperfmgr
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
