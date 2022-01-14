@@ -132,6 +132,9 @@ TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Security
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
