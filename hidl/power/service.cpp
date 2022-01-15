@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.0-service.exynos"
+#define LOG_TAG "android.hardware.power@1.0-service.universal9810"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -41,12 +41,6 @@ int main() {
     status = power->IPower::registerAsService();
     if (status != OK) {
         LOG(ERROR) << "Could not register service (IPower) for Power HAL";
-        goto shutdown;
-    }
-
-    status = power->ILineagePower::registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Could not register service (ILineagePower) for Power HAL";
         goto shutdown;
     }
 
