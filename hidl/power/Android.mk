@@ -23,13 +23,13 @@ LOCAL_SRC_FILES := \
     service.cpp
 
 LOCAL_C_INCLUDES := \
-    $(LOCAL_PATH)/include \
-    hardware/samsung/hidl/light/include
+    $(LOCAL_PATH)/include
 
 LOCAL_SHARED_LIBRARIES := \
     libbase \
     libbinder \
     libhidlbase \
+    libhidltransport \
     libutils \
     android.hardware.power@1.0
 
