@@ -274,7 +274,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service.exynos \
+    android.hardware.power@1.0-service.universal9810 \
     android.hardware.power.stats@1.0-service.mock
 
 # Ramdisk
