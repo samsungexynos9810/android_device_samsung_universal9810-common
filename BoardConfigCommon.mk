@@ -125,7 +125,6 @@ PRODUCT_CFI_INCLUDE_PATHS += hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_li
 BOARD_HAVE_SAMSUNG_WIFI          := true
 
 # Graphics
-TARGET_USES_VULKAN := true
 TARGET_USES_HWC2 := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BACKLIGHT_PATH := "/sys/class/backlight/panel/brightness"
