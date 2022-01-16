@@ -26,9 +26,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     security.securenvm.available=false \
     dalvik.vm.lockprof.threshold=500 \
     ro.carrier=unknown \
-    vendor.rild.libpath=/vendor/lib64/libsec-ril.so \
-    vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so \
-    vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so \
     ro.vendor.build.version.sehi=2901 \
     ro.sf.lcd_density=480 \
     ro.sf.init.lcd_density=640 \
@@ -95,7 +92,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=disable
 
 # RIL
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.rild.libpath=/vendor/lib64/libsec-ril.so \
+    vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so \
+    vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so \
     persist.sys.fflag.override.settings_provider_model=false
 
 # Samsung specific
