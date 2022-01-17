@@ -38,6 +38,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.vulkan=universal9810 \
     ro.zygote.disable_gl_preload=true
 
+# API
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.first_api_level=29
+
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.usb_by_primary=no
