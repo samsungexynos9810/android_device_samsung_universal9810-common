@@ -1,4 +1,8 @@
-allow hal_fingerprint_default efs_file:dir search;
+typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 
-r_dir_file(hal_fingerprint_default, sec_efs_file);
+allow hal_fingerprint_default fingerprintd_data_file:dir write;
+allow hal_fingerprint_default sysfs_virtual:dir search;
+allow hal_fingerprint_default sysfs_virtual:file r_file_perms;
+
+allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
