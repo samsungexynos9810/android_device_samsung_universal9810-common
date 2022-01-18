@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
+    SamsungDAP \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
@@ -356,11 +357,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service
-
-# SamsungParts
-PRODUCT_PACKAGES += \
-    SamsungParts \
-    vendor.outsiders.hardware.battery@1.0-service
 
 # RCS
 PRODUCT_PACKAGES += \
