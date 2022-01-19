@@ -12,12 +12,6 @@ TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-# APEX
-PRODUCT_COMPRESSED_APEX := false
-OVERRIDE_PRODUCT_COMPRESSED_APEX := falses
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # AptX
 PRODUCT_PACKAGES += \
     libaptX_encoder
