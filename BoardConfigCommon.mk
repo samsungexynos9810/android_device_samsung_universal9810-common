@@ -137,9 +137,10 @@ BOARD_VNDK_VERSION := current
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # SELinux
-# SELINUX_IGNORE_NEVERALLOWS := true
-# BOARD_SEPOLICY_TEE_FLAVOR := mobicore
+SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 # BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
 # Inherit SLSI common SEPolicy
 # include device/custom/sepolicy/exynos/sepolicy.mk
