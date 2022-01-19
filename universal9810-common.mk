@@ -266,7 +266,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0
+    android.hardware.power@1.0 \
+    android.hardware.power@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/hidl/power/android.hardware.power@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power@1.0-service.rc \
