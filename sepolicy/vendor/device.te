@@ -4,5 +4,8 @@ type m2m1shot_device, dev_type;
 # gps
 type gps_device, dev_type;
 
+# /dev/s5p-smem
+type secmem_device, dev_type;
+
 # /dev/vfsspi
 type fingerprint_device, dev_type;
