@@ -38,10 +38,5 @@ class BootCompletedReceiver : BroadcastReceiver() {
         private const val PROFILE_MOVIE = 1
         private const val PROFILE_MUSIC = 2
         private const val PROFILE_VOICE = 3
-        private const val PROFILE_GAME = 4
-        private const val PROFILE_OFF = 5
-        private const val PROFILE_GAME_1 = 6
-        private const val PROFILE_GAME_2 = 7
-        private const val PROFILE_SPACIAL_AUDIO = 8
     }
 }
