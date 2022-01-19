@@ -132,6 +132,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.default_network=9,9
 
+# VSYNC
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false
+
 # Wifi direct
 PRODUCT_PRODUCT_PROPERTIES += \
     wifi.direct.interface=p2p0
