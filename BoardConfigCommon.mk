@@ -138,7 +138,7 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Inherit SLSI common SEPolicy
 include device/custom/sepolicy/exynos/sepolicy.mk
-# include device/samsung_slsi/sepolicy/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
