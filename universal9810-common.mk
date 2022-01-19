@@ -20,8 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # AptX
 PRODUCT_PACKAGES += \
-    $(LOCAL_PATH)/libaptX/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptXHD_encoder.so \
-    $(LOCAL_PATH)/libaptX/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaptX_encoder.so
+    libaptX_encoder
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
