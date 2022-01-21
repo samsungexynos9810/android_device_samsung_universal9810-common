@@ -16,7 +16,7 @@ import android.util.Log
 import java.util.*
 
 class BootCompletedReceiver : BroadcastReceiver() {
-    public val audioEffect = AudioEffect(
+    private val audioEffect = AudioEffect(
         EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
     )
 
@@ -43,6 +43,10 @@ class BootCompletedReceiver : BroadcastReceiver() {
 }
 
 class DolbyTile : TileService() {
+    private val audioEffect = AudioEffect(
+        EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
+    )
+
     override fun onStartListening() {
         updateTile()
     }
