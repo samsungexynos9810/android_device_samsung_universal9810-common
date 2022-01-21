@@ -15,7 +15,7 @@ import android.util.Log
 
 import java.util.*
 
-class BootCompletedReceiver : BroadcastReceiver() {
+class DolbyCore : BroadcastReceiver() {
     private val audioEffect = AudioEffect(
         EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
     )
@@ -28,7 +28,7 @@ class BootCompletedReceiver : BroadcastReceiver() {
     }
 
     companion object {
-        private const val TAG = "SamsungDAP"
+        public const val TAG = "SamsungDAP"
 
         public val EFFECT_TYPE_DAP = UUID.fromString("46d279d9-9be7-453d-9d7c-ef937f675587")
 
@@ -43,19 +43,17 @@ class BootCompletedReceiver : BroadcastReceiver() {
 }
 
 class DolbyTile : TileService() {
-    private val audioEffect = AudioEffect(
-        EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
-    )
+    private var dolbyCore = DolbyCore()
 
     override fun onStartListening() {
         updateTile()
     }
 
     override fun onClick() {
-        if (audioEffect.enabled == true) {
-            audioEffect.enabled = false
+        if (dolbyCore.audioEffect.enabled == true) {
+            dolbyCore.audioEffect.enabled = false
         } else {
-            audioEffect.enabled = true
+            dolbyCore.audioEffect.enabled = true
         }
         updateTile()
     }
@@ -63,7 +61,7 @@ class DolbyTile : TileService() {
     private fun updateTile() {
         val tile = qsTile
         tile.state =
-            if (audioEffect.enabled == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+            if (dolbyCore.audioEffect.enabled == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
         tile.updateTile()
     }
 }
