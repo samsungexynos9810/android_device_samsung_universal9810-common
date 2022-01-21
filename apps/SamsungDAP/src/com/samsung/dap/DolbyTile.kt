@@ -12,6 +12,7 @@ import android.content.Context
 import android.content.Intent
 import android.media.audiofx.AudioEffect
 import android.util.Log
+import com.samsung.dap.DolbyCore
 
 import java.util.*
 
