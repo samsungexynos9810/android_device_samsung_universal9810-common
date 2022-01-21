@@ -5,13 +5,15 @@
 
 package com.samsung.dap
 
+import android.service.quicksettings.Tile
+import android.service.quicksettings.TileService
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.media.audiofx.AudioEffect
 import android.util.Log
 
-import java.util.UUID
+import java.util.*
 
 class BootCompletedReceiver : BroadcastReceiver() {
     private val audioEffect = AudioEffect(
@@ -37,5 +39,27 @@ class BootCompletedReceiver : BroadcastReceiver() {
         private const val PROFILE_MOVIE = 1
         private const val PROFILE_MUSIC = 2
         private const val PROFILE_VOICE = 3
+    }
+}
+
+class DolbyTile : TileService() {
+    override fun onStartListening() {
+        updateTile()
+    }
+
+    override fun onClick() {
+        if (audioEffect.enabled == true) {
+            audioEffect.enabled = false
+        } else {
+            audioEffect.enabled = true
+        }
+        updateTile()
+    }
+
+    private fun updateTile() {
+        val tile = qsTile
+        tile.state =
+            if (audioEffect.enabled == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+        tile.updateTile()
     }
 }
