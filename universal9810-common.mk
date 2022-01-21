@@ -67,10 +67,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     CameraGo
 
-# Configstore
+# ConfigStore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service \
-    android.hardware.configstore@1.1-service 
+    disable_configstore
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
