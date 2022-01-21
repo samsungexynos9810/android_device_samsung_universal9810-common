@@ -16,7 +16,7 @@ import android.util.Log
 import java.util.*
 
 class DolbyCore : BroadcastReceiver() {
-    private val audioEffect = AudioEffect(
+    public val audioEffect = AudioEffect(
         EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
     )
 
