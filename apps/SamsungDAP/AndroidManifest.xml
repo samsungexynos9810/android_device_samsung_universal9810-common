@@ -13,7 +13,7 @@
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
 
-        <receiver android:name="com.samsung.dap.BootCompletedReceiver">
+        <receiver android:name="com.samsung.dap.DolbyCore">
             <intent-filter>
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
