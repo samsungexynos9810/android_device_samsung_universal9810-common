@@ -41,27 +41,3 @@ class DolbyCore : BroadcastReceiver() {
         public const val PROFILE_VOICE = 3
     }
 }
-
-class DolbyTile : TileService() {
-    private var dolbyCore = DolbyCore()
-
-    override fun onStartListening() {
-        updateTile()
-    }
-
-    override fun onClick() {
-        if (dolbyCore.audioEffect.enabled == true) {
-            dolbyCore.audioEffect.enabled = false
-        } else {
-            dolbyCore.audioEffect.enabled = true
-        }
-        updateTile()
-    }
-
-    private fun updateTile() {
-        val tile = qsTile
-        tile.state =
-            if (dolbyCore.audioEffect.enabled == true) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-        tile.updateTile()
-    }
-}
