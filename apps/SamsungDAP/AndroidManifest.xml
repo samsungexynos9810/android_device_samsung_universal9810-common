@@ -21,7 +21,7 @@
         </receiver>
 
         <service
-            android:name=".dolby.DolbyTile"
+            android:name=".DolbyTile"
             android:exported="true"
             android:icon="@drawable/ic_dolby_atmos_icon"
             android:label="@string/dolby_title"
