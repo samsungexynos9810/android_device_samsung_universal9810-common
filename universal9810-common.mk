@@ -164,6 +164,10 @@ PRODUCT_PACKAGES += \
     init.usb_accessory.rc
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0 \
+    android.hardware.media.c2@1.1
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
