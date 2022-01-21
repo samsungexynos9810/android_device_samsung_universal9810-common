@@ -31,7 +31,6 @@ class BootCompletedReceiver : BroadcastReceiver() {
         private val EFFECT_TYPE_DAP = UUID.fromString("46d279d9-9be7-453d-9d7c-ef937f675587")
 
         private const val EFFECT_PARAM_PROFILE = 0
-        private const val EFFECT_PARAM_STEREO_WIDENING_DISTANCE = 1
         private const val EFFECT_PARAM_EFF_ENAB = 19
 
         private const val PROFILE_AUTO = 0
