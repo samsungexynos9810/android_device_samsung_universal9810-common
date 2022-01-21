@@ -16,7 +16,7 @@ import android.util.Log
 import java.util.*
 
 class BootCompletedReceiver : BroadcastReceiver() {
-    private val audioEffect = AudioEffect(
+    public val audioEffect = AudioEffect(
         EFFECT_TYPE_DAP, AudioEffect.EFFECT_TYPE_NULL, 0, 0
     )
 
@@ -30,15 +30,15 @@ class BootCompletedReceiver : BroadcastReceiver() {
     companion object {
         private const val TAG = "SamsungDAP"
 
-        private val EFFECT_TYPE_DAP = UUID.fromString("46d279d9-9be7-453d-9d7c-ef937f675587")
+        public val EFFECT_TYPE_DAP = UUID.fromString("46d279d9-9be7-453d-9d7c-ef937f675587")
 
-        private const val EFFECT_PARAM_PROFILE = 0
-        private const val EFFECT_PARAM_EFF_ENAB = 19
+        public const val EFFECT_PARAM_PROFILE = 0
+        public const val EFFECT_PARAM_EFF_ENAB = 19
 
-        private const val PROFILE_AUTO = 0
-        private const val PROFILE_MOVIE = 1
-        private const val PROFILE_MUSIC = 2
-        private const val PROFILE_VOICE = 3
+        public const val PROFILE_AUTO = 0
+        public const val PROFILE_MOVIE = 1
+        public const val PROFILE_MUSIC = 2
+        public const val PROFILE_VOICE = 3
     }
 }
 
