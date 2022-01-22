@@ -12,10 +12,6 @@ TARGET_GAPPS_ARCH := arm64
 FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
-# AdvancedDisplay
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
-
 # AptX
 PRODUCT_PACKAGES += \
     libaptX_encoder
