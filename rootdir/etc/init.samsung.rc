@@ -29,6 +29,8 @@ service charger /system/bin/charger
     # Vibrator
     chown system system /sys/class/timed_output/vibrator/enable
     chown system system /sys/class/timed_output/vibrator/intensity
+    chown system system /sys/class/timed_output/vibrator/force_touch_intensity
+    write /sys/class/timed_output/vibrator/force_touch_intensity 10000
 
 on fs
     swapon_all /system/etc/fstab.zram
