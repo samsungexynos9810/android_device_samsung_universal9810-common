@@ -331,6 +331,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.samsung.touch@1.0 \
+    vendor.samsung.touch@1.0-service.samsung
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.1-service.typec
