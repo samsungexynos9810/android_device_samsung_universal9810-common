@@ -26,6 +26,10 @@ service charger /system/bin/charger
     group system radio input
     critical
 
+    # Vibrator
+    chown system system /sys/class/timed_output/vibrator/enable
+    chown system system /sys/class/timed_output/vibrator/intensity
+
 on fs
     swapon_all /system/etc/fstab.zram
 
