@@ -167,10 +167,6 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.usb_accessory.rc
 
-# Livedisplay
-PRODUCT_PACKAGES += \
-    vendor.samsung.livedisplay@2.0-service.samsung-exynos
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -338,11 +334,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.samsung.touch@1.0 \
-    vendor.samsung.touch@1.0-service.samsung
 
 # USB
 PRODUCT_PACKAGES += \
