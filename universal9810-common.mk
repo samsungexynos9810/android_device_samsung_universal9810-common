@@ -144,6 +144,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite \
     libprotobuf-cpp-lite-vendorcompat
 
+# libsuspend
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.universal9810
