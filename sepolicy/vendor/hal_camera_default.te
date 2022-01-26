@@ -25,3 +25,6 @@ get_prop(hal_camera_default, exported_camera_prop)
 vndbinder_use(hal_camera_default)
 
 dontaudit hal_camera_default default_prop:file read;
+
+# Virtual
+allow hal_camera_default sysfs_virtual:dir search;

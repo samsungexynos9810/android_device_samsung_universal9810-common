@@ -33,3 +33,7 @@ allow init fwk_sensor_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
 
 unix_socket_connect(init, property, rild)
+
+# SYSFS
+allow init sysfs_virtual:file create_file_perms;
+allow init sysfs_virtual:lnk_file { read };
