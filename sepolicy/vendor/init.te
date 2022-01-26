@@ -16,6 +16,9 @@ allow init iorapd_data_file:file getattr;
 allow init sysfs_scsi_host:dir relabelfrom;
 allow init sysfs_scsi_host:file relabelfrom;
 
+# PROC
+allow init proc_extra:file setattr;
+
 # Sockets
 allow init socket_device:sock_file { read write getattr setattr create unlink };
 allow init node:tcp_socket node_bind;

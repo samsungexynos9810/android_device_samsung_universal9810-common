@@ -13,6 +13,7 @@ genfscon debugfs /debug/ipa                     u:object_r:debugfs_ipa:s0
 #
 
 genfscon proc /device-tree                      u:object_r:proc_dt_firmware:s0
+genfscon proc /extra                            u:object_r:proc_extra:s0
 
 genfscon proc /sys/vm/dirty_ratio               u:object_r:proc_vm:s0
 genfscon proc /sys/vm/dirty_bytes               u:object_r:proc_vm:s0

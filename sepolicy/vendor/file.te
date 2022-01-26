@@ -35,6 +35,7 @@ type proc_reset_reason, fs_type, proc_type;
 type proc_sec, fs_type, proc_type;
 type proc_simslot_count, fs_type, proc_type;
 type proc_vm, fs_type, proc_type;
+type proc_extra, fs_type, proc_type;
 
 # sysfs types
 type sysfs_camera, fs_type, sysfs_type, mlstrustedobject;
