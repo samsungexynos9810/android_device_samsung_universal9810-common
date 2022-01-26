@@ -6,6 +6,9 @@ COMMON_PATH := device/samsung/universal9810-common
 # Apex
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# Apex Updateable Inheritance
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Architecture
 TARGET_ARCH         := arm64
 TARGET_ARCH_VARIANT := armv8-a
