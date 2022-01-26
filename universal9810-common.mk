@@ -6,8 +6,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # AptX
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/libaptX/libaptX_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
-    $(LOCAL_PATH)/libaptX/libaptXHD_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
+    $(LOCAL_PATH)/libaptX/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
+    $(LOCAL_PATH)/libaptX/libaptXHD_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
 
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
