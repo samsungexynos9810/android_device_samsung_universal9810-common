@@ -57,9 +57,8 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_GAPPS_ARCH := arm64
 
 # Graphics
-TARGET_USES_HWC2                := true
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-BACKLIGHT_PATH                  := "/sys/class/backlight/panel/brightness"
+TARGET_USES_HWC2 := true
+BACKLIGHT_PATH   := "/sys/class/backlight/panel/brightness"
 
 # Hacks
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
