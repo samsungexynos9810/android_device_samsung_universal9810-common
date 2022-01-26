@@ -67,11 +67,10 @@ genfscon sysfs /kernel/hmp                                          u:object_r:s
 genfscon sysfs /firmware/devicetree/base/cpus/hmp/down_threshold    u:object_r:sysfs_socinfo:s0
 
 # Decon
-genfscon sysfs /devices/13960000.decon_f                u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/13e10000.decon_s                u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/13e20000.decon_t                u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/19030000.decon_f/vsync u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/19050000.decon_t/vsync u:object_r:sysfs_ss_writable:s0
 genfscon sysfs /devices/platform/19050000.decon_f/vsync u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/19060000.decon_s/vsync u:object_r:sysfs_ss_writable:s0
 
 # Graphics
 genfscon sysfs /class/backlight/panel/brightness     u:object_r:sysfs_graphics:s0
