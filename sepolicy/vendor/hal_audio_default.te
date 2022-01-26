@@ -1,11 +1,15 @@
-allow hal_audio_default vts_fio_device:chr_file rw_file_perms;
+# hal_audio_default.te
 
-allow hal_audio_default efs_file:dir search;
-r_dir_file(hal_audio_default, imei_efs_file);
-r_dir_file(hal_audio_default, sec_efs_file);
+allow hal_audio_default {
+    efs_file
+    sec_efs_file
+}:dir search;
+
+allow hal_audio_default sec_efs_file:file r_file_perms;
 
 allow hal_audio_default rild:unix_stream_socket connectto;
 
-get_prop(hal_audio_default, vendor_radio_prop);
+# Allow hal to take wakelock
+wakelock_use(hal_audio_default)
 
-wakelock_use(hal_audio_default);
+get_prop(hal_audio_default, vendor_audio_prop)

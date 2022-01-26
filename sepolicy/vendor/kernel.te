@@ -1,13 +1,45 @@
-allow kernel self:capability { mknod sys_admin };
-dontaudit kernel self:capability { dac_override dac_read_search };
+# kernel.te
 
 allow kernel block_device:dir search;
-allow kernel device:dir { add_name write remove_name rmdir };
-allow kernel device:chr_file { create setattr getattr unlink };
-dontaudit kernel device:blk_file create;
 
-r_dir_file(kernel, efs_file);
-allow kernel app_efs_file:dir create_dir_perms;
-allow kernel app_efs_file:file create_file_perms;
+# /dev/mbin0
+allow kernel emmcblk_device:blk_file r_file_perms;
 
-r_dir_file(kernel, sysfs_sec_key);
+# /efs contents
+allow kernel {
+    app_efs_file
+    battery_efs_file 
+    efs_file 
+    sensor_efs_file
+    wifi_efs_file
+}:dir r_dir_perms;
+
+allow kernel {
+    app_efs_file
+    battery_efs_file
+    efs_file
+    sensor_efs_file
+    sensor_factoryapp_efs_file
+}:file rw_file_perms;
+
+# /data/misc/conn/.wifiver.info
+allow kernel wifi_data_file:file rw_file_perms;
+
+# /sys/devices/system/cpu/cpu[0-9]/cpufreq/*
+allow kernel sysfs_devices_system_cpu:file setattr;
+
+allow kernel {
+    sysfs_sec_key
+    sysfs_ssp
+}:dir search;
+
+allow kernel {
+    sysfs_sec_key
+    sysfs_ssp
+}:file r_file_perms;
+
+# Allow kernel to search tmpfs
+allow kernel tmpfs:dir search;
+
+allow kernel kernel:capability chown;
+allow kernel self:capability { chown mknod sys_module};

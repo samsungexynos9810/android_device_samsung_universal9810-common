@@ -1,5 +1,9 @@
-allow fsck sysfs_battery:dir search;
+# fsck.te
 
-allow fsck efs_block_device:blk_file rw_file_perms;
-allow fsck keydata_block_device:blk_file rw_file_perms;
-allow fsck keyrefuge_block_device:blk_file rw_file_perms;
+allow fsck{
+    cid_block_device
+    persist_block_device
+    sdd_block_device
+}:blk_file rw_file_perms;
+
+allow fsck sysfs_battery:dir search;

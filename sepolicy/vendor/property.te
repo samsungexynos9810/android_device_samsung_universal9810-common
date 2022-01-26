@@ -1,4 +1,17 @@
-vendor_internal_prop(vendor_bluetooth_prop)
-vendor_internal_prop(vendor_camera_prop)
-vendor_internal_prop(vendor_hwc_prop)
-vendor_internal_prop(vendor_wlan_prop)
+# Audio
+vendor_internal_prop(vendor_audio_prop);
+
+# Camera
+vendor_internal_prop(vendor_camera_prop);
+
+# HWC
+vendor_internal_prop(vendor_hwc_prop);
+
+# NFC
+vendor_internal_prop(vendor_nfc_prop);
+
+# OMX
+vendor_internal_prop(vendor_omx_prop);
+
+# Radio
+vendor_internal_prop(clatd_radio_prop)

@@ -1,4 +1,5 @@
-allow bootanim traced_producer_socket:sock_file write;
-allow bootanim traced:unix_stream_socket connectto;
+# bootanim.te
 
-dontaudit bootanim system_data_file:dir search;
+allow bootanim video_device:chr_file rw_file_perms;
+
+get_prop(bootanim, userspace_reboot_exported_prop)
