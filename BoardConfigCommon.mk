@@ -6,9 +6,6 @@ COMMON_PATH := device/samsung/universal9810-common
 # Apex
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
-# Apex Updateable Inheritance
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Architecture
 TARGET_ARCH         := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -32,6 +29,7 @@ BOARD_CUSTOM_BT_CONFIG                      := $(COMMON_PATH)/bluetooth/libbt_vn
 BOARD_HAVE_BLUETOOTH_BCM                    := true
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES          := 1440p
 TARGET_BOOTANIMATION_PRELOAD       := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_SCREEN_HEIGHT               := 2960
@@ -123,7 +121,6 @@ TARGET_POWERHAL_VARIANT := samsung
 PRODUCT_AAPT_CONFIG       := xlarge
 PRODUCT_AAPT_PREF_CONFIG  := xxxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
-TARGET_BOOT_ANIMATION_RES := 1440
 
 # Security
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)

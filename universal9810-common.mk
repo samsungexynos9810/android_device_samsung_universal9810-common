@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # Copyright (C) 2022 The LineageOS Project
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # AptX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/libaptX/libaptX_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
