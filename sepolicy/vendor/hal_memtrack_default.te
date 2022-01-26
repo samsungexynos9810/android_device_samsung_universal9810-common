@@ -4,6 +4,8 @@ allow hal_memtrack_default debugfs:dir r_dir_perms;
 
 allow hal_memtrack_default {
     debugfs_ion
+    debugfs_ion_dma
     debugfs_mali
     debugfs_mali_mem
+    sysfs_gpu
 }:file r_file_perms;
