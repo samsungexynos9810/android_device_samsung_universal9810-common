@@ -67,9 +67,15 @@ genfscon sysfs /kernel/hmp                                          u:object_r:s
 genfscon sysfs /firmware/devicetree/base/cpus/hmp/down_threshold    u:object_r:sysfs_socinfo:s0
 
 # Decon
-genfscon sysfs /devices/13960000.decon_f  u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/13e10000.decon_s  u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/13e20000.decon_t  u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13960000.decon_f                u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13e10000.decon_s                u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/13e20000.decon_t                u:object_r:sysfs_graphics:s0
+genfscon sysfs /devices/platform/19030000.decon_f/vsync u:object_r:sysfs_ss_writable:s0
+genfscon sysfs /devices/platform/19050000.decon_f/vsync u:object_r:sysfs_ss_writable:s0
+
+# Graphics
+genfscon sysfs /class/backlight/panel/brightness     u:object_r:sysfs_graphics:s0
+genfscon sysfs /class/backlight/panel/max_brightness u:object_r:sysfs_graphics:s0
 
 # Hall
 genfscon sysfs /devices/certify_hall/input  u:object_r:sysfs_hall:s0
@@ -128,3 +134,5 @@ genfscon sysfs /devices/virtual/android_usb/android0                u:object_r:s
 genfscon sysfs /devices/fimc_is_preprocessor@14020000/video4linux   u:object_r:sysfs_v4l:s0
 
 genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                     u:object_r:sysfs_vmscan:s0
+
+genfscon sysfs /kernel/gpu/                                         u:object_r:sysfs_gpu:s0
