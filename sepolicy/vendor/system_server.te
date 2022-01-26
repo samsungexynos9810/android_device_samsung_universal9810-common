@@ -2,9 +2,15 @@
 
 binder_call(system_server, gpsd)
 
+# GPU
+allow system_server gpu_device:chr_file rw_file_perms;
+
 # used to access the fwk_sensor_hwservice over hwbinder
 binder_call(system_server, hal_camera_default)
 
+# Memtrack HAL
+allow system_server debugfs_mali:dir r_dir_perms;
+allow system_server debugfs_mali:file r_file_perms;
 allow system_server debugfs_ion:file r_file_perms;
 allow system_server debugfs_mali_mem:file r_file_perms;
 
