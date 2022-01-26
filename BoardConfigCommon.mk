@@ -20,20 +20,10 @@ TARGET_2ND_CPU_ABI      := armeabi-v7a
 TARGET_2ND_CPU_ABI2     := armeabi
 TARGET_2ND_CPU_VARIANT  := cortex-a53
 
-# Audio
-TARGET_EXCLUDES_AUDIOFX := true
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 BOARD_CUSTOM_BT_CONFIG                      := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_HAVE_BLUETOOTH_BCM                    := true
-
-# Boot animation
-TARGET_BOOT_ANIMATION_RES          := 1440p
-TARGET_BOOTANIMATION_PRELOAD       := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_SCREEN_HEIGHT               := 2960
-TARGET_SCREEN_WIDTH                := 1440
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -50,9 +40,6 @@ TARGET_SEC_FP_HAS_FINGERPRINT_GESTURES := true
 # Firmware
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
 
 # Graphics
 TARGET_USES_HWC2 := true
@@ -117,11 +104,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Samsung HALs
 TARGET_POWERHAL_VARIANT := samsung
 
-# Screen density
-PRODUCT_AAPT_CONFIG       := xlarge
-PRODUCT_AAPT_PREF_CONFIG  := xxxhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
-
 # Security
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
@@ -146,7 +128,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifes
 
 # VNDK
 BOARD_VNDK_VERSION          := current
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # Wifi
 TARGET_USES_64_BIT_BCMDHD                     := true

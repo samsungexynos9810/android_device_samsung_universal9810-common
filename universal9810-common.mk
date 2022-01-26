@@ -10,6 +10,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/libaptX/libaptXHD_encoder:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptXHD_encoder.so
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_PACKAGES += \
     SamsungDAP \
     android.hardware.audio.effect@7.0-impl \
@@ -39,6 +41,13 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libldacBT_bco \
     libldacBT_dec
+
+# Boot animation
+TARGET_BOOT_ANIMATION_RES          := 1440
+TARGET_BOOTANIMATION_PRELOAD       := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+TARGET_SCREEN_HEIGHT               := 2960
+TARGET_SCREEN_WIDTH                := 1440
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -86,6 +95,9 @@ PRODUCT_PACKAGES += \
 # Flat device tree for boot image
 PRODUCT_HOST_PACKAGES += \
     dtbhtoolExynos
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -289,6 +301,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     $(LOCAL_PATH)/configs/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc
 
+# Screen density
+PRODUCT_AAPT_CONFIG       := xlarge
+PRODUCT_AAPT_PREF_CONFIG  := xxxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -332,6 +349,9 @@ PRODUCT_PACKAGES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
+
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
