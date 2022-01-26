@@ -1,6 +1,7 @@
 # kernel.te
 
 allow kernel block_device:dir search;
+dontaudit kernel device:blk_file create;
 
 # /dev/mbin0
 allow kernel emmcblk_device:blk_file r_file_perms;
