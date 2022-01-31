@@ -4,10 +4,6 @@
     "target_path": "prebuilts/clang/host/linux-x86/clang-r437112"
   },
   {
-    "repository": "android_hardware_samsung_nfc",
-    "target_path": "hardware/samsung/nfc"
-  },
-  {
     "repository": "android_device_samsung_slsi_sepolicy",
     "target_path": "device/samsung_slsi/sepolicy"
   }
