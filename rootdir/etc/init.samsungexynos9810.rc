@@ -306,6 +306,8 @@ on init
     write /dev/stune/top-app/schedtune.gb_duration 25
     write /dev/stune/top-app/schedtune.gb_balance_ratio 55
 
+    setprop ro.boot.hardware.revision ${ro.revision}
+
 on late-fs
     # Start services for Boot Animation
     start servicemanager
