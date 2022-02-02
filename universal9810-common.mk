@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.samsungexynos9810_ramdisk \
+    init.samsungexynos9810.root.rc \
     init.recovery.samsungexynos9810.rc \
     init.safailnet.rc \
     fstab.zram \
