@@ -97,8 +97,8 @@ PRODUCT_PACKAGES += \
     strace
 
 # Extra Icons
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/apps/CustomPixelLauncherOverlay/ThemedIconsOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CustomPixelLauncherOverlay/ThemedIconsOverlay.apk
+PRODUCT_PACKAGES += \
+    ThemedIconsOverlay
 
 # Fastbootd
 PRODUCT_PACKAGES += \
