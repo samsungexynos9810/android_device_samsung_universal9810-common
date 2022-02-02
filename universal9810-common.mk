@@ -161,7 +161,6 @@ PRODUCT_PACKAGES += \
     init.recovery.samsungexynos9810.rc \
     init.safailnet.rc \
     fstab.zram \
-    init.samsung.rc \
     init.usb_accessory.rc
 
 # Keylayout
