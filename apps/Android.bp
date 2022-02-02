@@ -24,14 +24,3 @@ android_app_import {
     privileged: true,
     overrides: ["Camera", "Camera2", "Snap"],
 }
-
-android_app_import {
-    name: "ThemedIconsOverlay",
-    owner: "google",
-    apk: "CustomPixelLauncherOverlay/ThemedIconsOverlay.apk",
-    presigned: true,
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-}
