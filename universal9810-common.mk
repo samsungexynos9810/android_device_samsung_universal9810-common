@@ -49,9 +49,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl:64 \
-    android.hardware.bluetooth@1.0-service \
-    libldacBT_bco \
-    libldacBT_dec
+    android.hardware.bluetooth@1.0-service
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES          := 1440
