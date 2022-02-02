@@ -365,9 +365,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
 
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
