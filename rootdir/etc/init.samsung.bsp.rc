@@ -1,8 +1,0 @@
-on early-init
-# start softdog early
-    write /dev/watchdog1 1
-
-on init
-    chown root system /dev/watchdog1
-    chmod 0660 /dev/watchdog1
-    write /dev/watchdog1 "V"
