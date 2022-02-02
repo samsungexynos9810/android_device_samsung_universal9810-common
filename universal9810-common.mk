@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor:32 \
     android.hardware.drm@1.4.vendor:32 \
     android.hardware.drm@1.4-service.clearkey \
+    libdrm.vendor:64
 
 # Extra Command-Line Tools
 PRODUCT_PACKAGES += \
@@ -138,6 +139,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
