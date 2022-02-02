@@ -20,14 +20,19 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl:32 \
+    android.hardware.audio@7.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl \
-    libtinycompress \
+    android.hardware.bluetooth.audio@2.0-impl:32 \
+    android.hardware.soundtrigger@2.0-impl:32 \
+    android.hidl.allocator@1.0.vendor:32 \
+    audio.a2dp.default \
+    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
-    android.hardware.audio.service
+    libaudioroute \
+    libtinyalsa \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -43,10 +48,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1-service \
-    android.hardware.bluetooth.audio@2.1-impl \
-    audio.a2dp.default \
-    audio.bluetooth.default \
+    android.hardware.bluetooth@1.0-impl:64 \
+    android.hardware.bluetooth@1.0-service \
     libldacBT_bco \
     libldacBT_dec
 
@@ -83,13 +86,9 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3.vendor:32 \
+    android.hardware.drm@1.4.vendor:32 \
     android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor
 
 # Extra Command-Line Tools
 PRODUCT_PACKAGES += \
@@ -117,13 +116,12 @@ TARGET_GAPPS_ARCH := arm64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-service
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor
+    android.hardware.gnss@2.0.vendor:64
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -135,8 +133,7 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-impl:64 \
     android.hardware.health@2.1-service
 
 # HIDL
@@ -194,7 +191,7 @@ PRODUCT_COPY_FILES += \
 
 # Memtrack
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-impl:64 \
     android.hardware.memtrack@1.0-service
 
 # Net
@@ -225,8 +222,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service
+    libepicoperator
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -329,6 +325,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.universal9810-multihal \
+    android.hardware.contexthub@1.0.vendor:64 \
     libsensorndkbridge
 
 # Setup dalvik vm configs
