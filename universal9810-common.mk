@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
     sgdisk \
     strace
 
+# Extra Icons
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/apps/CustomPixelLauncherOverlay/ThemedIconsOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CustomPixelLauncherOverlay/ThemedIconsOverlay.apk
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
