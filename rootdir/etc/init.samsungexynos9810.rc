@@ -321,6 +321,8 @@ on post-fs-data
 # Keymaster
     mkdir /efs/DAK 0775 system system
     restorecon -R /efs/DAK
+    chown system system /mnt/vendor/efs/DAK/gakkeybox
+    chmod 0644 /mnt/vendor/efs/DAK/gakkeybox
 
 # Log data folder
     mkdir /data/log 0771 radio system
