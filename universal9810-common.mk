@@ -89,6 +89,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     libdrm.vendor:64
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/drm/move_widevine_data.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/move_widevine_data.sh
+
 # Extra Command-Line Tools
 PRODUCT_PACKAGES += \
     sgdisk \
