@@ -135,7 +135,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.sf.color_saturation=1.0 \
     persist.sys.sf.native_mode=2 \
-    debug.sf.enable_hwc_vds=0 \
     debug.sf.latch_unsignaled=1 \
     ro.surface_flinger.has_wide_color_display=true \
     ro.surface_flinger.has_HDR_display=true \
