@@ -108,7 +108,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Samsung specific
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
-    ro.vendor.cscsupported=1
+    ro.vendor.cscsupported=1 \
+    ro.cmc.device_type=pd \
+    ro.cmc.version=2.0
 
 # Security
 PRODUCT_PRODUCT_PROPERTIES += \
