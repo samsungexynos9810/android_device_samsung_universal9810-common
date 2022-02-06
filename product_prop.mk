@@ -59,10 +59,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank=0 \
     debug.stagefright.omx_default_rank.sw-audio=1
 
-# Configstore
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
