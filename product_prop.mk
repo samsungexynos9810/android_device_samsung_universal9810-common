@@ -4,8 +4,6 @@
 # Device specific property overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.arch=exynos9810 \
-    persist.demo.hdmirotationlock=false \
-    dev.usbsetting.embedded=on \
     aaudio.mmap_policy=2 \
     aaudio.mmap_exclusive_policy=2 \
     aaudio.hw_burst_min_usec=2000 \
@@ -28,7 +26,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.scafe.version=2020A \
     ro.frp.pst=/dev/block/persistent \
     sys.usb.ffs.aio_compat=true \
-    ro.config.systemaudiodebug=abox&codecdsp \
     ro.gfx.driver.0=com.samsung.gpudriver.S9MaliG72_90 \
     ro.hardware.egl=mali \
     ro.hardware.vulkan=mali \
@@ -39,11 +36,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=29
 
 # Audio
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.usb_by_primary=no
 
 # Bluetooth
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.a2dp_by_primary=no \
     ro.bluetooth.a2dp_offload.supported=false \
     persist.bluetooth.a2dp_offload.disabled=true \
@@ -53,7 +50,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.samsung_samplerate.supported=true
 
 # Blur
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.launcher.blur.appLaunch=0
 
 # Codec2
@@ -113,40 +110,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_provider_model=false
 
 # Samsung specific
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.product_ship=true \
     ro.vendor.cscsupported=1
 
 # Security
 PRODUCT_PRODUCT_PROPERTIES += \
-    vendor.sys.mobicoredaemon.enable=true \
-    security.mdf.result=None \
-    security.mdf=None \
-    ro.hardware.keystore=mdfpp \
-    ro.security.keystore.keytype=sak,gak \
-    security.securehw.available=false \
-    security.securenvm.available=false \
-    ro.security.cass.feature=1 \
-    keyguard.no_require_sim=true \
-    security.ASKS.policy_version=00000000 \
-    security.ASKS.version=0 \
-    security.ASKS.time_value=00000000 \
-    security.ASKS.rufs_enable=true \
-    security.ADP.version=0 \
-    security.ADP.policy_version=00000000 \
-    ro.security.fips.ux=Enabled \
-    ro.security.fips_bssl.ver=1.4 \
-    ro.security.fips_fmp.ver=1.4 \
-    ro.security.fips_skc.ver=1.9 \
-    ro.security.fips_scrypto.ver=2.2 \
-    ro.security.mdf.ux=Enabled \
-    ro.security.mdf.ver=3.1 \
-    ro.security.wlan.ver=1.0 \
-    ro.security.wlan.release=2 \
-    ro.security.mdf.release=5 \
-    ro.security.vpnpp.ver=2.1 \
-    ro.security.vpnpp.release=3.0.1 \
-    ro.vendor.build.version.sehi=2905
+    ro.hardware.keystore=mdfpp
 
 # Skia
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -165,7 +135,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Surfaceflinger
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1
+    debug.sf.latch_unsignaled=1 \
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.has_HDR_display=true \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.use_color_management=true
 
 # System
 PRODUCT_PRODUCT_PROPERTIES += \
