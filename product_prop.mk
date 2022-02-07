@@ -107,6 +107,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Samsung specific
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.ddk.set.afbc=1 \
+    vendor.hwc.exynos.vsync_mode=0 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=0 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=0 \
     ro.product_ship=true \
     ro.vendor.cscsupported=1 \
     ro.cmc.device_type=pd \
